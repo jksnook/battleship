@@ -1,0 +1,23 @@
+:root {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}
+
+.ship {
+  background: black;
+}
+
+.miss {
+  background-color: rgb(105, 48, 48);
+}
