@@ -33,6 +33,9 @@ export default function drawBoard(player) {
       squareDiv.classList.add('square');
       if (player.board.hasShip(cords)) {
         squareDiv.classList.add('ship');
+        if (player.board.getSquare(cords).hit) {
+          squareDiv.classList.add('ship-hit');
+        }
       } else if (player.board.getSquare(cords).hit) {
         squareDiv.classList.add('miss');
       }
