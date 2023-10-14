@@ -9,6 +9,10 @@ export default class Player {
     this.opponent = opponent;
   }
 
+  play (cords) {
+    this.opponent.board.receiveAttack(cords);
+  }
+
   autoplay () {
     let randCords = [Math.floor(Math.random() * 10), Math.floor(Math.random() * 10)];
     while (this.opponent.board.getSquare(randCords).hit) {
